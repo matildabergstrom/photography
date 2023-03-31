@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script src="script.js"></script>
+    <title>Photography</title>
+</head>
+<body>
+<!-- MENU START -->
+
+<div class="waviy">
+  <span style="--i:1">l</span>
+  <span style="--i:2">e</span>
+  <span style="--i:3">a</span>
+  <span style="--i:4">r</span>
+  <span style="--i:5">n</span>
+
+ </div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<div class="menu">
+<div class="menuCircle">
+</div>
+  
+<div class="menuBox">
+  <div class="flower">
+    
+    <div class="overflowControl">
+  <div class="petal"><div class="icon"></div></div>
+  <div class="petal"><div class="icon"></div></div>
+  <div class="petal"><div class="icon"></div></div>
+  <div class="petal"><div class="icon">
+    
+    <a href="history.html"><img src="https://freesvg.org/img/Vintage-Movie-Camera-Icon.png"></img></a>
+      </div></div>
+  <div class="petal"><div class="icon">
+    
+    <a href="gallery.html"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-512.png"></img></a>
+      </div></div>
+  <div class="petal"><div class="icon">
+    
+    <a href="camera.html"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-camera-512.png"></img></a>
+      </div></div>
+  
+    </div>
+    
+</div>
+ <span class="material-symbols-outlined">
+drag_handle</span>
+  <div class="menuCircleOuter">
+  </div>
+  </div>
+</div>
+  
+</div>
+
+<!-- MENU END -->
+
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<!-- Use it like any other HTML element -->
+<model-viewer src="FabConvert.com_uploads_files_2560455_null.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.66" environment-image="aircraft_workshop_01_1k.hdr" exposure="1.41" shadow-softness="0.94">
+  <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+  </div>
+  <button slot="ar-button" id="ar-button">
+      View in your space
+  </button>
+  <div id="ar-prompt">
+      <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+  </div>
+</model-viewer>
+
+
+</body>
+</html>

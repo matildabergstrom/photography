@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin:0;
+  padding: 0;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; 
+}
+
+html, body {
+  background-color: black;
+  margin: 10px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  margin: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.horizontal {
+  grid-column: span 2;
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical {
+  grid-row: span 2;
+  overflow: hidden;
+  position: relative;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+  overflow: hidden;
+  position: relative;
+}
+
+.normal {
+  overflow: hidden;
+  position: relative;
+}
+
+.container img{
+  filter: grayscale(1);
+  transition: all 0.3s;
+}
+
+.container p{
+position: absolute;
+font-size: 0.5em;
+bottom: 0;
+width: 60px;
+border-radius: 20%;
+text-align: center;
+backdrop-filter: invert(100%);
+/*text-shadow: rgb(255, 255, 255) 1px 1px 5px;*/
+opacity:1;
+}
+
+.horizontal .credit:hover{
+  opacity:0;
+}
+
+.container img:hover{
+  filter: grayscale(0);
+  width: 110%;
+  height: 110%;
+}
+
+.waviy {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
