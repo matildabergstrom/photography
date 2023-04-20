@@ -15,7 +15,7 @@
 .menuBox{
   width:200px;
   height:200px;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

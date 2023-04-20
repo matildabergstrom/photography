@@ -1,9 +1,13 @@
-const spans = document.querySelectorAll('.title span');
-
-spans.forEach((span, index) => {
-  setTimeout(() => {
-    span.style.animation = '';
-    span.offsetHeight; // trigger reflow
-    span.style.animation = 'reveal 1s cubic-bezier(0.42, 0, 0.58, 1) forwards';
-  }, 1000 + 200 * index);
-});
+// Handles loading the events for <model-viewer>'s slotted progress bar
+const onProgress = (event) => {
+  const progressBar = event.target.querySelector('.progress-bar');
+  const updatingBar = event.target.querySelector('.update-bar');
+  updatingBar.style.width = `${event.detail.totalProgress * 100}%`;
+  if (event.detail.totalProgress === 1) {
+    progressBar.classList.add('hide');
+    event.target.removeEventListener('progress', onProgress);
+  } else {
+    progressBar.classList.remove('hide');
+  }
+};
+document.querySelector('model-viewer').addEventListener('progress', onProgress);
