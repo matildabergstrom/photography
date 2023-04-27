@@ -28,6 +28,7 @@
     transform-origin: 50% 100%;
     align-self: center;
     top:0;
+    border: 2px solid #666666;
   }
 
 .menuBox:hover .menuCircleOuter{
