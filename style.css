@@ -471,3 +471,9 @@ ul {
   filter: grayscale(1);
   transition: all 1s;
 }
+
+.transition{
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(black, white);
+}
