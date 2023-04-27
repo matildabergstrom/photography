@@ -28,7 +28,6 @@
     transform-origin: 50% 100%;
     align-self: center;
     top:0;
-    border: 2px solid #666666;
   }
 
 .menuBox:hover .menuCircleOuter{
@@ -51,6 +50,7 @@
 .menuBox:hover .menuCircleOuter:before
 {
       transform: rotate(180deg);
+      box-shadow: 0 0 0 2px #666666 inset;
 }
 .menuCircle{
     background-color: #a6a6a6;
@@ -133,6 +133,12 @@
 .menuBox:hover .flower .petal:nth-child(5) .icon {
   opacity: 1;
 }
+.menuBox:hover .flower .petal:nth-child(6) .icon {
+  opacity: 1;
+}
+.menuBox:hover .flower .petal:nth-child(8) .icon {
+  opacity: 1;
+}
 
 .flower .petal {
   /*border: 1px solid #999;*/
@@ -159,7 +165,7 @@
 }
 
 .flower .petal .icon img:hover{
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .flower .petal:nth-child(0) {
@@ -169,48 +175,66 @@
   rotate: 0deg;
 }
 .flower .petal:nth-child(1) {
-  rotate: 60deg;
+  rotate: 45deg;
 }
 .flower .petal:nth-child(1) .icon {
-  rotate: -60deg;
+  rotate: -45deg;
 }
 .flower .petal:nth-child(2) {
-  rotate: 120deg;
+  rotate: 90deg;
 }
 .flower .petal:nth-child(2) .icon {
-  rotate: -120deg;
+  rotate: -90deg;
 }
 .flower .petal:nth-child(3) {
-  rotate: 180deg;
+  rotate: 135deg;
 }
 .flower .petal:nth-child(3) .icon {
-  rotate: -180deg;
+  rotate: -135deg;
 }
 .flower .petal:nth-child(4) {
-  rotate: 240deg;
+  rotate: 180deg;
 }
 .flower .petal:nth-child(4) .icon {
-  rotate: -240deg;
+  rotate: -180deg;
   opacity: 0;
   transition-delay: 0.3s;
 }
 .flower .petal:nth-child(5) {
-  rotate: 300deg;
+  rotate: 225deg;
 }
 .flower .petal:nth-child(5) .icon {
-  rotate: -300deg;
+  rotate: -225deg;
     opacity: 0;
   transition-delay: 0.3s;
 }
 .flower .petal:nth-child(6) {
-  rotate: 360deg;
+  rotate: 270deg;
 }
 .flower .petal:nth-child(6) .icon {
-  rotate: -360deg;
+  rotate: -270deg;
+  opacity: 0;
+  transition-delay: 0.3s;
 }
 .flower .petal:nth-child(7) {
-  rotate: 420deg;
+  rotate: 315deg;
 }
 .flower .petal:nth-child(7) .icon {
-  rotate: -420deg;
+  rotate: -315deg;
+}
+
+.flower .petal:nth-child(8) {
+  rotate: 360deg;
+}
+.flower .petal:nth-child(8) .icon {
+  rotate: -360deg;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+
+.flower .petal:nth-child(9) {
+  rotate: 405deg;
+}
+.flower .petal:nth-child(9) .icon {
+  rotate: -405deg;
 }

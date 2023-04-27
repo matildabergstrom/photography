@@ -92,6 +92,7 @@ transition: all 0.5s;
   position: relative;
   display: inline-block;
   font-size: 40px;
+  /*font-family: 'Courier Prime', monospace;*/
   color: #fff;
   text-transform: uppercase;
   animation: flip 3s infinite;
@@ -309,3 +310,164 @@ ul {
 }
 /* TIMELIME END */
 
+.indexGrid {
+
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 60px;
+
+  top: 100px;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 250px);
+  grid-template-areas:
+  "st st st st st si si si si si si si"
+  "hi hi hi hi hi hi hi ht ht ht ht ht"
+  "tt tt tt tt tt ti ti ti ti ti ti ti"
+  "ki ki ki ki ki ki ki kt kt kt kt kt";
+}
+
+/* STYLES FÖR DATOR */
+
+@media all and (min-width: 1150px) {
+  .indexGrid {
+    width: 55vw;
+    grid-template-rows: repeat(4, 450px);
+  }
+  #floatingCamera {
+    width: 50vw;
+
+  }
+  .indexGrid h3 {
+    font-size: 2em;
+    margin: 20px;
+  }
+  .indexGrid p {
+    font-size: 1.3em;
+    margin: 15px;
+  }
+}
+
+/* STYLES FÖR MOBIL */
+
+@media all and (max-width: 1150px) {
+  .indexGrid {
+    width: 100vw;
+  }
+  #ghiblilogo {
+    width: 90vw;
+  }
+  .indexGrid h3 {
+    font-size: 1.4em;
+    margin: 5px;
+  }
+  .indexGrid p {
+    font-size: 0.9em;
+    margin: 4px;
+  }
+
+}
+
+
+
+/* GRID AREAS */
+
+.box1 {
+  grid-area: si;
+}
+
+.text1 {
+  grid-area: st;
+  background-color: #948963;
+  justify-content: center;
+}
+
+.box2 {
+  grid-area: hi;
+}
+
+.text2 {
+  grid-area: ht;
+  background-color: #3A1E12;
+  justify-content: center;
+}
+
+
+.box3 {
+  grid-area: ti;
+}
+
+.text3 {
+  grid-area: tt;
+  background-color: #85a3cc;
+  justify-content: center;
+}
+
+
+.box4 {
+  grid-area: ki;
+}
+
+.text4 {
+  grid-area: kt;
+  background-color: #462A2B;
+  justify-content: center;
+}
+
+
+/* GRID AREAS END */
+
+.photographyimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: all 1s;
+}
+
+.indexGrid h3{
+  color: white;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.indexGrid p {
+  color:white;
+  font-family: 'Blinker', sans-serif;
+  text-align: center;
+}
+
+#floatingCamera{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#hiddenheader{
+  opacity: 0;
+  position: absolute;
+}
+
+.photographyimage:hover{
+  filter: grayscale(0);
+}
+
+.photographyimage:hover .imageText{
+  filter: grayscale(0);
+}
+
+.imageText:hover{
+  filter: grayscale(0);
+}
+
+.imageText:hover{
+  filter: grayscale(0);
+}
+
+.imageText{
+  filter: grayscale(1);
+  transition: all 1s;
+}
