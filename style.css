@@ -358,7 +358,7 @@ ul {
 
 @media all and (min-width: 1150px) {
   .indexGrid {
-    width: 55%;
+    width: 70%;
     grid-template-rows: repeat(4, 450px);
   }
   #floatingCamera {
