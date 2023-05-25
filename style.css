@@ -124,13 +124,6 @@ text-shadow: rgb(255, 255, 255) 0px 0px 3px;
   }
 }
 
-/* STYLES FÖR MOBIL */
-@media all and (max-width: 590px) {
-  .titleMargin{
-    height: 100px;
-  }
-}
-
 
 /* TIMELINE / HISTORY */
 
@@ -359,7 +352,7 @@ ul {
 @media all and (min-width: 1150px) {
   .indexGrid {
     width: 70%;
-    grid-template-rows: repeat(4, 400px);
+    grid-template-rows: repeat(4, 450px);
   }
   #floatingCamera {
     width: 50%;
@@ -368,10 +361,13 @@ ul {
   .indexGrid h3 {
     font-size: 2em;
     margin: 20px;
+    margin-top: 20%;
   }
   .indexGrid p {
     font-size: 1.3em;
     margin: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
