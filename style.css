@@ -159,7 +159,7 @@ ul {
 .timeline ul li h2 {
   color: white;
   text-align: center;
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: Cursive;
 }
 /*Heading*/
 
@@ -167,7 +167,7 @@ ul {
 /*Date*/
 .timeline ul li h4 {
   text-align: center;
-  font-family: 'Blinker', sans-serif;
+  font-family: sans-serif;
 }
 /*Date*/
 
@@ -178,7 +178,7 @@ ul {
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: 'Blinker', sans-serif;
+  font-family: sans-serif;
 }
 /*Description*/
 
@@ -451,12 +451,12 @@ ul {
 .indexGrid h3{
   color: white;
   text-align: center;
-  font-family: 'Nothing You Could Do', cursive;
+  font-family:cursive;
 }
 
 .indexGrid p {
   color:white;
-  font-family: 'Blinker', sans-serif;
+  font-family: sans-serif;
   text-align: center;
 }
 
