@@ -631,10 +631,10 @@ model-viewer {
       transform: rotate(0deg);
 }
 
+/*
 .material-symbols-outlined {
   position: absolute;
   transform: translate(0px, 0px);
-   /* transform: translate(60px, 60px);*/
   z-index: 10000000;
   color: #474747;
   cursor: default;
@@ -654,6 +654,7 @@ model-viewer {
    transform: rotate(90deg);
       
 }
+*/
 
 .flower {
   width: 300px;
@@ -801,3 +802,24 @@ model-viewer {
 .flower .petal:nth-child(9) .icon {
   rotate: -405deg;
 }
+
+.menusymbol {
+  position: absolute;
+  transform: translate(0px, 0px);
+  z-index: 10000000;
+  color: #474747;
+  cursor: default;
+  transition: all 1s;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+  width: 80px;
+  opacity: 0.7;
+}
+
+.menuBox:hover .menusymbol
+{
+   transform: rotate(90deg);
+      
+}
+
+
